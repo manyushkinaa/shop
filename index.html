@@ -4,96 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        /* Стили для аккордеона */
+        .accordion {
+            display: block;
+            border: 1px solid #220c69;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .accordion-header {
+            background-color: #16805b;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .accordion-body {
+            padding: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    
+
 <header class="header">
-  <nav class="navar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-collapse">
-      <div class="navbar-nav">
-        
-        <a href="#" class="nav-item nav-link active">Home</a>
-       <a href="#" class="nav-item nav-link">Article</a>
-        <a href="#" class="nav-item nav-link">About</a>
-  </div>
-     </div>
-         </nav>
+    <nav class="navar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-collapse">
+            <div class="navbar-nav">
+
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Article</a>
+                <a href="#" class="nav-item nav-link">About</a>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <main class="main">
-    
-
-   <div class="row d-flex justify-content-center">
-<div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-<div>
-    <img src="i14pro.jpeg" class="card-img-top">
-</div>
-<div class="card-body">
-    <h5 class="card-title">IPhone 14 Pro</h5>
-    <p class="card-text">The ultimate iPhone</p>
-    <a href="#" class="btn btn-primary">Подробнее</a>
-             </div>
-         </div>
-
-         <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-            <div>
-                <img src="i14.jpeg" class="card-img-top">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">IPhone 14 </h5>
-                <p class="card-text">The ultimate iPhone</p>
-                <a href="#" class="btn btn-primary">Подробнее</a>
-                         </div>
-                     </div>
-
-                     <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-                        <div>
-                            <img src="i13.jpeg" class="card-img-top">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">IPhone 13</h5>
-                            <p class="card-text">The ultimate iPhone</p>
-                            <a href="#" class="btn btn-primary">Подробнее</a>
-                                     </div>
-                                 </div>
-
-    </div>
     <div class="row d-flex justify-content-center">
         <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-        <div>
-            <img src="i11.png" class="card-img-top">
+            <div>
+                <img src="i14pro.jpeg" class="card-img-top" alt="IPhone 14 Pro">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">IPhone 14 Pro</h5>
+                <p class="card-text">The ultimate iPhone</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">IPhone 11</h5>
-            <p class="card-text">The ultimate iPhone</p>
-            <a href="#" class="btn btn-primary">Подробнее</a>
-                     </div>
-                 </div>
-        
-                 <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-                    <div>
-                        <img src="ixs.png" class="card-img-top">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">IPhone XS </h5>
-                        <p class="card-text">The ultimate iPhone</p>
-                        <a href="#" class="btn btn-primary">Подробнее</a>
-                                 </div>
-                             </div>
-        
-                             <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
-                                <div>
-                                    <img src="i12.png" class="card-img-top">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">IPhone 12</h5>
-                                    <p class="card-text">The ultimate iPhone</p>
-                                    <a href="#" class="btn btn-primary">Подробнее</a>
-                                             </div>
-                                         </div>
-        
 
+        <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
+            <div>
+                <img src="i14.jpeg" class="card-img-top" alt="IPhone 14">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">IPhone 14</h5>
+                <p class="card-text">The ultimate iPhone</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-8 p-3 m-3">
+            <div>
+                <img src="i13.jpeg" class="card-img-top" alt="IPhone 13">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">IPhone 13</h5>
+                <p class="card-text">The ultimate iPhone</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Аккордеон -->
+    <div class="accordion">
+        <div class="accordion-header">IPhone 11</div>
+        <div class="accordion-body">
+            <div class="card col-lg-3 col-md-4 col-sm-8 p-3">
+                <img src="i11.png" class="card-img-top" alt="IPhone 11">
+                <div class="card-body">
+                    <h5 class="card-title">IPhone 11</h5>
+                    <p class="card-text">The ultimate iPhone</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">IPhone XS</div>
+        <div class="accordion-body">
+            <div class="card col-lg-3 col-md-4 col-sm-8 p-3">
+                <img src="ixs.png" class="card-img-top" alt="IPhone XS">
+                <div class="card-body">
+                    <h5 class="card-title">IPhone XS</h5>
+                    <p class="card-text">The ultimate iPhone</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">IPhone 12</div>
+        <div class="accordion-body">
+            <div class="card col-lg-3 col-md-4 col-sm-8 p-3">
+                <img src="i12.png" class="card-img-top" alt="IPhone 12">
+                <div class="card-body">
+                    <h5 class="card-title">IPhone 12</h5>
+                    <p class="card-text">The ultimate iPhone</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">
@@ -101,7 +127,32 @@
         This site was made by Angelina
     </div>
 </footer>
+<script>
+    // Получаем все элементы аккордеона
+    var accordionItems = document.getElementsByClassName('accordion');
 
+    // Устанавливаем обработчик событий для клика на заголовок аккордеона
+    for (var i = 0; i < accordionItems.length; i++) {
+        accordionItems[i].getElementsByClassName('accordion-header')[0].addEventListener('click', function () {
+            toggleAccordion(this);
+        });
+    }
 
+    // Функция для открытия/закрытия аккордеона
+    function toggleAccordion(accordionHeader) {
+        // Получаем элемент, содержащий содержимое аккордеона
+        var accordionBody = accordionHeader.nextElementSibling;
+
+        // Меняем класс активности для заголовка аккордеона
+        accordionHeader.classList.toggle('active');
+
+        // Отображаем/скрываем содержимое аккордеона
+        if (accordionBody.style.display === 'block') {
+            accordionBody.style.display = 'none';
+        } else {
+            accordionBody.style.display = 'block';
+        }
+    }
+</script>
 </body>
 </html>
